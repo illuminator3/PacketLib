@@ -1,0 +1,6 @@
+def versions = [:]
+
+versions.self = '0.1'
+versions.spigot = '1.8.8-R0.1-SNAPSHOT'
+
+project.ext.versions = versions

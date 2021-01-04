@@ -1,0 +1,41 @@
+buildscript {
+    apply from: 'versions.gradle'
+}
+
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+    id 'net.minecrell.plugin-yml.bukkit' version '0.3.0'
+}
+
+group 'me.illuminator3'
+version project.versions.self
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot:' << project.versions.spigot
+
+    compile 'org.jetbrains.kotlin:kotlin-stdlib'
+}
+
+bukkit {
+    name = 'PacketLib'
+    version = project.versions.self
+    author = 'illuminator3'
+    main = 'me.illuminator3.packetlib.defaultplugin.PacketLibDefaultPlugin'
+    load = 'STARTUP'
+}
