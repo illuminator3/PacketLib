@@ -25,7 +25,7 @@ import java.lang.reflect.Method
 object Reflection
 {
     @JvmStatic
-    private val ver: String = Bukkit.getServer().javaClass.`package`.name.replace(".", ",").split(",")[3]
+    private val ver: String = Bukkit.getServer()::class.java.`package`.name.replace(".", ",").split(",")[3]
 
     @JvmStatic
     private val getHandle: Method = getClass("{cb}.entity.CraftPlayer").getMethod("getHandle")
