@@ -14,6 +14,9 @@
    limitations under the License.
  */
 
+/**
+ * @author illuminator3
+ */
 package me.illuminator3.packetlib.extensions
 
 import me.illuminator3.packetlib.utils.Reflection

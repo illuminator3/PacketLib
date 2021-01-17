@@ -16,6 +16,9 @@
 
 package me.illuminator3.packetlib.packet.event
 
+/**
+ * @author illuminator3
+ */
 @FunctionalInterface
 interface InlinedPacketListener
 {

@@ -20,6 +20,9 @@ import me.illuminator3.packetlib.utils.Reflection
 import java.lang.reflect.Field
 import java.lang.reflect.Method
 
+/**
+ * @author illuminator3
+ */
 data class Packet internal constructor (private val original: Any /* NMS Packet */)
 {
     fun getField(name: String): Field = Reflection.getField(original::class.java, name)

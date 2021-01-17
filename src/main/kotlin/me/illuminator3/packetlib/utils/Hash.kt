@@ -16,6 +16,9 @@
 
 package me.illuminator3.packetlib.utils
 
+/**
+ * @author illuminator3
+ */
 class Hash<T>(private val code: Int)
 {
     companion object {

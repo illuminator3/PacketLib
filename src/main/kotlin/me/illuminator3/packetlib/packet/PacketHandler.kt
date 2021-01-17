@@ -23,6 +23,9 @@ import me.illuminator3.packetlib.utils.Reflection
 import org.bukkit.entity.Player
 import kotlin.jvm.Throws
 
+/**
+ * @author illuminator3
+ */
 abstract class PacketHandler constructor (private val player: Player) : ChannelDuplexHandler()
 {
     private val nmsPacket = Reflection.getClass("{nms}.Packet")

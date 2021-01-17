@@ -20,6 +20,9 @@ import me.illuminator3.packetlib.packet.Packet
 import org.bukkit.entity.Player
 import org.bukkit.event.Cancellable
 
+/**
+ * @author illuminator3
+ */
 data class PacketEvent constructor (val player: Player, val packet: Packet) : Cancellable
 {
     private var cancelled = false

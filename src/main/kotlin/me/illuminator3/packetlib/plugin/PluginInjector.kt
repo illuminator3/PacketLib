@@ -20,6 +20,9 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.TabCompleter
 import org.bukkit.event.Listener
 
+/**
+ * @author illuminator3
+ */
 interface PluginInjector
 {
     fun registerListener(listener: Listener)

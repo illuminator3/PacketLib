@@ -18,6 +18,9 @@ package me.illuminator3.packetlib.packet.event
 
 import me.illuminator3.packetlib.packet.Packet
 
+/**
+ * @author illuminator3
+ */
 abstract class PacketListener
 {
     private lateinit var lastPacket: Packet

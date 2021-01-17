@@ -22,6 +22,9 @@ import org.bukkit.entity.Player
 import java.lang.reflect.Field
 import java.lang.reflect.Method
 
+/**
+ * @author illuminator3
+ */
 object Reflection
 {
     @JvmStatic

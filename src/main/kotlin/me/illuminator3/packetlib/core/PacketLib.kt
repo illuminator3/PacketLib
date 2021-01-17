@@ -44,6 +44,9 @@ import kotlin.collections.HashMap
 import kotlin.concurrent.timerTask
 import kotlin.jvm.Throws
 
+/**
+ * @author illuminator3
+ */
 class PacketLib private constructor (private val packetInjector: PacketInjector, private val handlerFactory: BiParameterizedFactory<PacketHandler, PacketLib, Player>, private val pluginInjector: PluginInjector, private val libListenerFactory: ParameterizedFactory<Listener, PacketLib>)
 {
     companion object {

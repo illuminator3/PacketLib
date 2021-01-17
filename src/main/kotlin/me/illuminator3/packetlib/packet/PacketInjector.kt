@@ -19,6 +19,9 @@ package me.illuminator3.packetlib.packet
 import me.illuminator3.packetlib.core.PacketLib
 import org.bukkit.entity.Player
 
+/**
+ * @author illuminator3
+ */
 interface PacketInjector
 {
     fun inject(lib: PacketLib, player: Player)

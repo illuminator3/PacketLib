@@ -18,4 +18,7 @@ package me.illuminator3.packetlib.defaultplugin
 
 import org.bukkit.plugin.java.JavaPlugin
 
+/**
+ * @author illuminator3
+ */
 class PacketLibDefaultPlugin : JavaPlugin()

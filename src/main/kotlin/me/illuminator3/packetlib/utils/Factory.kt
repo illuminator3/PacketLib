@@ -16,6 +16,9 @@
 
 package me.illuminator3.packetlib.utils
 
+/**
+ * @author illuminator3
+ */
 interface Factory<T>
 {
     fun generate(): T

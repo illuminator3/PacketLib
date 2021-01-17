@@ -16,6 +16,9 @@
 
 package me.illuminator3.packetlib.utils
 
+/**
+ * @author illuminator3
+ */
 interface ParameterizedFactory<T, P>
 {
     fun generate(param: P): T
